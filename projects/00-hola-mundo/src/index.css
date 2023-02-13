@@ -5,4 +5,76 @@ body {
     display: grid;
     place-content: center;
     min-height: 100vh ;
+    color: white;
+}
+
+.twitter-card{
+    margin-bottom: 20px;
+}
+.twitter-card,
+.twitter-card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.twitter_profile-img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.twitter-card_user-info-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.twitter-card_user-name {
+    font-weight: 500 ;
+}
+.twitter-card_user-username {
+    font-weight: 300;
+    color: #8a8a8a;
+    font-size:15px;
+}
+
+.twitter_btn{
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 120px;
+    border: none;
+}
+.twitter_btn.Siguiendo{
+    background-color: transparent;
+    border: 1px #fff solid;
+    color: #fff;
+}
+.twitter_btn.Siguiendo:hover{
+    background-color: rgba(255, 0, 0, 0.170);
+    border: 1px solid red;
+    color: red;
+}
+
+.twitter_btn.Siguiendo:hover .twitter-stopFlollow {
+    display: block;
+}
+
+.twitter_btn.Siguiendo:hover .twitter-text {
+    display: none;
+}
+
+.twitter_btn:hover {
+    background-color: #a1a;
+}
+
+.tw-FollowCard-btn.is-following {
+    border: 1px solid red;
+    background-color: red;
+    color: #fff;
+}
+
+.twitter-stopFlollow{
+    display: none;
+
 }
