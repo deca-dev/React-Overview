@@ -11,5 +11,5 @@ export const WINNER_COMBOS = [
 
   export const TURNS = {
     X: 'X',
-    O : 'O'
+    O : '0'
   }
