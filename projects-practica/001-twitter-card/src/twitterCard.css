@@ -31,7 +31,7 @@
 }
 
 .tw-bttn {
-    width: 100px;
+    cursor: pointer;
     padding: 5px 20px;
     border-radius: 20px;
     outline: none;
@@ -39,10 +39,30 @@
     transition: 0.5s ease background-color;
 }
 
+.tw-text{
+    display: block;
+}
+
 .tw-bttn.is-following {
-    border: 1px soild red;
+    width: 140px;
+    border: 1px solid #ccc;
+    background-color: transparent;
+    color: #fff;
+}
+
+.tw-bttn.is-following:hover .tw-text {
+    display: none;
 }
 
 .tw-bttn.is-following:hover {
     background-color: red;
+    border: 1px solid red;
+}
+
+.tw-bttn.is-following:hover .tw-stopFollow{
+    display: block;
+}
+
+.tw-stopFollow {
+    display: none;
 }

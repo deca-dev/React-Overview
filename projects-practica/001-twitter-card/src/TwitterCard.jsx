@@ -19,7 +19,10 @@ const handleButtonClick = () => {
             <p className='tw-name'>{name}</p>
             <p className='tw-userName'>{userName}</p>
         </div>
-        <button onClick={handleButtonClick} className={buttonClassName}>{buttonText}</button>
+        <button onClick={handleButtonClick} className={buttonClassName}>
+          <span className='tw-text'>{buttonText}</span>
+        <span className='tw-stopFollow'>Deja de seguir</span>
+        </button>
     </div>
   )
 }
